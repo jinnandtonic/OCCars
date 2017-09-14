@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orancecoastcollege.cs273.rmillett.occars.PurchaseActivity">
+
+
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/oc_cars_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction"
+        android:layout_below="@+id/headerImageView"
+        android:layout_alignLeft="@+id/downPaymentTextView"
+        android:layout_alignStart="@+id/downPaymentTextView"
+        android:layout_marginTop="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/carPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_price"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/downPaymentTextView"
+        android:layout_alignLeft="@+id/downPaymentTextView"
+        android:layout_alignStart="@+id/downPaymentTextView" />
+
+    <TextView
+        android:id="@+id/downPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_payment"
+        android:layout_below="@+id/carPriceTextView"
+        android:layout_alignLeft="@+id/headerImageView"
+        android:layout_alignStart="@+id/headerImageView" />
+
+    <EditText
+        android:id="@+id/carPriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_below="@+id/instructionTextView"
+        android:layout_toRightOf="@+id/downPaymentTextView"
+        android:layout_toEndOf="@+id/downPaymentTextView" />
+
+    <EditText
+        android:id="@+id/downPaymentEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignBaseline="@+id/carPriceTextView"
+        android:layout_alignBottom="@+id/carPriceTextView"
+        android:layout_toRightOf="@+id/downPaymentTextView"
+        android:layout_toEndOf="@+id/downPaymentTextView" />
+</RelativeLayout>
